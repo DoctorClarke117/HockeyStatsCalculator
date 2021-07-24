@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Home.master.cs" Inherits="HockeyNicholasNieto.Home1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <link href="Styles/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+                 <header id="head"><h1>Hockey League Stats</h1><br />
+                     <br />
+                     <br />
+                     <br />
+                     <br />
+                     <br />
+                     <br />
+                     <br />
+                 </header>
+
+            <section>
+
+                <asp:LinkButton ID="btnHome" runat="server" PostBackUrl="~/HomePage.aspx" CausesValidation="False">Home</asp:LinkButton>
+&nbsp;&nbsp;&nbsp;
+                <asp:LinkButton ID="btnAddPlayer" runat="server" PostBackUrl="~/AddPlayer.aspx" CausesValidation="False">Add Player</asp:LinkButton>
+&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:LinkButton ID="btnAddStats" runat="server" PostBackUrl="~/AddStats.aspx" CausesValidation="False">Add Stats</asp:LinkButton>
+&nbsp;&nbsp;
+                <asp:LinkButton ID="btnEditStats" runat="server" CausesValidation="False" PostBackUrl="~/EditStats.aspx">Edit Stats</asp:LinkButton>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:LinkButton ID="btnEditPlayer" runat="server" CausesValidation="False" PostBackUrl="~/EditPlayer.aspx">Edit Player</asp:LinkButton>
+
+            </section>
+         <footer>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </footer>
+            
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <footer>StudentID: 991524366<br />
+                Name: Nicholas Nieto</footer>
+        </div>
+    </form>
+</body>
+</html>
